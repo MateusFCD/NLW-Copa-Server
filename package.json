@@ -1,7 +1,6 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts"
@@ -9,6 +8,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
   "devDependencies": {
     "@mermaid-js/mermaid-cli": "^9.1.7",
     "prisma": "^4.5.0",
@@ -20,5 +22,14 @@
     "@fastify/cors": "^8.1.1",
     "@prisma/client": "^4.5.0",
     "fastify": "^4.9.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateusFCD/NLW-Copa-Server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MateusFCD/NLW-Copa-Server/issues"
+  },
+  "homepage": "https://github.com/MateusFCD/NLW-Copa-Server#readme",
+  "description": ""
 }
